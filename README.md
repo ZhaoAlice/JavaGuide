@@ -195,8 +195,7 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 **知识点/面试题总结：**
 
 - **[MySQL知识点总结](./docs/database/mysql/mysql-questions-01.md)** (必看 :+1:)
-- [一千行 MySQL 学习笔记](./docs/database/mysql/a-thousand-lines-of-mysql-study-notes.md)
-- [MySQL 高性能优化规范建议](./docs/database/mysql/mysql-high-performance-optimization-specification-recommendations.md)
+- [MySQL 高性能优化规范建议总结](./docs/database/mysql/mysql-high-performance-optimization-specification-recommendations.md)
 
 **重要知识点：**
 
@@ -231,15 +230,19 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ## 开发工具
 
+### Maven
+
+[Maven 核心概念总结](./docs/tools/maven/maven-core-concepts.md)
+
 ### Docker
 
-* [Docker 基本概念解读](./docs/tools/docker/docker-intro.md)
-* [Docker从入门到上手干事](./docs/tools/docker/docker-in-action.md)
+* [Docker 核心概念总结](./docs/tools/docker/docker-intro.md)
+* [Docker 实战](./docs/tools/docker/docker-in-action.md)
 
 ### Git
 
-* [Git 入门](./docs/tools/git/git-intro.md)
-* [Github 小技巧](./docs/tools/git/github-tips.md)
+* [Git 核心概念总结](./docs/tools/git/git-intro.md)
+* [Github 实用小技巧总结](./docs/tools/git/github-tips.md)
 
 ## 系统设计
 
@@ -249,7 +252,8 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 ### 基础
 
 - [RestFul API 简明教程](./docs/system-design/basis/RESTfulAPI.md)
-- [Java 编码命名之道](./docs/system-design/basis/naming.md) 
+- [软件工程简明教程简明教程](./docs/system-design/basis/software-engineering.md)
+- [代码命名指南](./docs/system-design/basis/naming.md) 
 - [代码重构指南](./docs/system-design/basis/refactoring.md)
 - [单元测试指南](./docs/system-design/basis/unit-test.md)
 
@@ -303,38 +307,38 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ## 分布式
 
-### CAP 理论和 BASE 理论
+### 理论&算法&协议
 
-[CAP 理论和 BASE 理论解读](./docs/distributed-system/theorem&algorithm&protocol/cap&base-theorem.md)
-
-### Paxos 算法和 Raft 算法
-
+- [CAP 理论和 BASE 理论解读](./docs/distributed-system/theorem&algorithm&protocol/cap&base-theorem.md)
 - [Paxos 算法解读](./docs/distributed-system/theorem&algorithm&protocol/paxos-algorithm.md)
 - [Raft 算法解读](./docs/distributed-system/theorem&algorithm&protocol/raft-algorithm.md)
+
+### API 网关
+
+[API 网关详解](./docs/distributed-system/api-gateway.md)
+
+### 分布式 ID
+
+[分布式 ID 详解](./docs/distributed-system/distributed-id.md)
+
+### 分布式锁
+
+[分布式锁详解](./docs/distributed-system/distributed-lock.md)
+
+### 分布式事务
+
+[分布式事务详解](./docs/distributed-system/distributed-transaction.md)
+
+### 分布式配置中心
+
+[分布式配置中心详解](./docs/distributed-system/distributed-configuration-center.md)
 
 ### RPC
 
 * [RPC 基础常见知识点&面试题总结](./docs/distributed-system/rpc/rpc-intro.md)
 * [Dubbo 常见知识点&面试题总结](./docs/distributed-system/rpc/dubbo.md)
 
-### API 网关
-
-* [为什么要网关？你知道有哪些常见的网关系统？](./docs/distributed-system/api-gateway.md)
-* [百亿规模API网关服务Shepherd的设计与实现](https://tech.meituan.com/2021/05/20/shepherd-api-gateway.html)
-
-### 分布式 id
-
-[为什么要分布式 id ？分布式 id 生成方案有哪些？](./docs/distributed-system/distributed-id.md)
-
-### 分布式锁
-
-[分布式锁](./docs/distributed-system/distributed-lock.md)
-
-### 分布式事务
-
-[分布式事务](./docs/distributed-system/distributed-transaction.md)
-
-### 分布式协调
+### ZooKeeper
 
 > 前两篇文章可能有内容重合部分，推荐都看一遍。
 
@@ -344,6 +348,22 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 
 ## 高性能
 
+### 数据库读写分离&分库分表
+
+[数据库读写分离&分库分表详解](./docs/high-performance/read-and-write-separation-and-library-subtable.md)
+
+### 负载均衡
+
+[负载均衡详解](./docs/high-performance/load-balancing.md)
+
+### SQL 优化
+
+[常见 SQL 优化手段总结](./docs/high-performance/sql-optimization.md)
+
+### CDN
+
+[CDN（内容分发网络）详解](./docs/high-performance/cdn.md)
+
 ### 消息队列
 
 消息队列在分布式系统中主要是为了解耦和削峰。相关阅读： [消息队列常见问题总结](./docs/high-performance/message-queue/message-queue.md)。
@@ -352,33 +372,25 @@ JVM 这部分内容主要参考 [JVM 虚拟机规范-Java8 ](https://docs.oracle
 - **RocketMQ** : [RocketMQ 基础知识总结](./docs/high-performance/message-queue/rocketmq-intro.md)、[RocketMQ 常见面试题总结](./docs/high-performance/message-queue/rocketmq-questions.md)
 - **Kafka** ：[Kafka 常见问题总结](./docs/high-performance/message-queue/kafka-questions-01.md)
 
-### 读写分离&分库分表
-
- [读写分离&分库分表](./docs/high-performance/read-and-write-separation-and-library-subtable.md)
-
-### 负载均衡
-
- [负载均衡](./docs/high-performance/load-balancing.md)
-
-### CDN
-
-[CDN（内容分发网络）](./docs/high-performance/cdn.md)
-
 ## 高可用
 
-[高可用系统设计指南](./docs/high-availability/high-availability-system-design.md) 。
+[高可用系统设计指南](./docs/high-availability/high-availability-system-design.md)
+
+### 冗余设计
+
+[冗余设计详解](./docs/high-availability/redundancy.md)
 
 ### 限流
 
-[何为限流？限流算法有哪些？](./docs/high-availability/limit-request.md)
+[服务限流详解](./docs/high-availability/limit-request.md)
 
 ### 降级&熔断
 
-[降级&熔断](./docs/high-availability/fallback&circuit-breaker.md)
+[降级&熔断详解](./docs/high-availability/fallback&circuit-breaker.md)
 
 ### 超时&重试
 
-[超时&重试](./docs/high-availability/timeout-and-retry.md)
+[超时&重试详解](./docs/high-availability/timeout-and-retry.md)
 
 ### 集群
 

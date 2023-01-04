@@ -26,7 +26,7 @@ icon: "distributed-network"
 
 ![](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/books/ddia.png)
 
-强推一波**[《Designing Data-Intensive Application》](https://book.douban.com/subject/30329536/)** （DDIA，数据密集型应用系统设计），值得读很多遍！豆瓣有接近 90% 的人看了这本书之后给了五星好评。
+强推一波 **[《Designing Data-Intensive Application》](https://book.douban.com/subject/30329536/)** （DDIA，数据密集型应用系统设计），值得读很多遍！豆瓣有接近 90% 的人看了这本书之后给了五星好评。
 
 这本书主要讲了分布式数据库、数据分区、事务、分布式系统等内容。
 
@@ -35,6 +35,14 @@ icon: "distributed-network"
 这本书我之前专门写过知乎回答介绍和推荐，没看过的朋友可以看看：[有哪些你看了以后大呼过瘾的编程书？ ](https://www.zhihu.com/question/50408698/answer/2278198495) 。
 
 另外，如果你在阅读这本书的时候感觉难度比较大，很多地方读不懂的话，我这里推荐一下《深入理解分布式系统》作者写的[《DDIA 逐章精读》小册](https://ddia.qtmuniao.com)。
+
+## 《深入理解分布式事务》
+
+![](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/books/In-depth-understanding-of-distributed-transactions-xiaoyu.png)
+
+**[《深入理解分布式事务》](https://book.douban.com/subject/35626925/)**  这本书是的其中一位作者是 Apache ShenYu（incubating）网关创始人、Hmily、RainCat、Myth等分布式事务框架的创始人。
+
+学习分布式事务的时候，可以参考一下这本书。虽有一些小错误以及逻辑不通顺的地方，但对于各种分布式事务解决方案的介绍，总体来说还是不错的。
 
 ## 《从 Paxos 到 Zookeeper》
 
@@ -52,7 +60,7 @@ icon: "distributed-network"
 
 ![](https://guide-blog-images.oss-cn-shenzhen.aliyuncs.com/github/javaguide/books/f5bec14d3b404ac4b041d723153658b5.png)
 
-**[《凤凰架构》](https://book.douban.com/subject/35492898/)**这本书是周志明老师多年架构和研发经验的总结，内容非常干货，深度与广度并存，理论结合实践！
+**[《凤凰架构》](https://book.douban.com/subject/35492898/)** 这本书是周志明老师多年架构和研发经验的总结，内容非常干货，深度与广度并存，理论结合实践！
 
 正如书名的副标题“构建可靠的大型分布式系统”所说的那样，这本书的主要内容就是讲：“如何构建一套可靠的分布式大型软件系统” ，涵盖了下面这些方面的内容：
 
